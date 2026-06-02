@@ -530,24 +530,56 @@ textarea.form-control {
 }
 
 /* =========================================================
-   RESPONSIVO
+   RESPONSIVO - mantendo Bootstrap e corrigindo mobile
 ========================================================= */
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
+    .navbar {
+        min-height: 68px;
+    }
+
     .navbar-collapse {
-        padding: 14px 0 6px;
+        max-height: calc(100vh - 78px);
+        margin-top: 10px;
+        padding: 12px;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, .96);
+        border: 1px solid rgba(23, 155, 134, .12);
+        border-radius: 22px;
+        box-shadow: 0 18px 44px rgba(24, 62, 70, .10);
+    }
+
+    .navbar-nav {
+        gap: 4px !important;
     }
 
     .navbar .nav-link {
-        margin: 4px 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .main-content {
+        padding-top: 78px;
     }
 
     .hero-section {
-        padding-top: 34px;
+        padding: 34px 0 52px;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .hero-visual {
-        min-height: 420px;
-        margin-top: 30px;
+        width: min(100%, 440px);
+        min-height: 390px;
+        margin-top: 10px;
+    }
+
+    .hero-mascot {
+        width: min(340px, 82vw);
     }
 
     .float-card.card-one {
@@ -559,39 +591,104 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 767px) {
-    .main-content {
-        padding-top: 76px;
+@media (max-width: 767.98px) {
+    .container {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .brand-logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .brand-text {
+        max-width: 170px;
+        overflow: hidden;
+        font-size: 1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .brand-text small {
         display: none;
     }
 
+    .eyebrow {
+        justify-content: center;
+        max-width: 100%;
+        margin-bottom: 14px;
+        font-size: .72rem;
+        line-height: 1.25;
+        text-align: center;
+        white-space: normal;
+    }
+
     .hero-title,
     .page-title {
-        letter-spacing: -.045em;
+        letter-spacing: -.04em;
+        text-wrap: balance;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 11vw, 3rem);
+        line-height: 1.03;
+    }
+
+    .hero-subtitle,
+    .section-subtitle,
+    .page-description {
+        font-size: .98rem;
+        line-height: 1.62;
     }
 
     .hero-visual {
-        min-height: 330px;
+        min-height: 285px;
+        margin-top: 0;
     }
 
     .hero-blob {
-        inset: 26px 12px;
+        inset: 22px 20px 14px;
+        border-radius: 34px;
     }
 
-    .float-card {
-        position: relative;
-        inset: auto !important;
-        max-width: 100%;
-        margin-top: 10px;
+    .hero-mascot {
+        width: min(250px, 72vw);
+        filter: drop-shadow(0 18px 24px rgba(24, 62, 70, .16));
     }
 
     .section-padding,
     .planos,
     .form-section {
-        padding: 54px 0;
+        padding: 48px 0;
+    }
+
+    .section-title {
+        margin-bottom: 12px;
+        font-size: clamp(1.8rem, 9vw, 2.35rem);
+        line-height: 1.08;
+    }
+
+    .section-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .v-card,
+    .page-hero-card,
+    .contact-side {
+        border-radius: 22px;
+    }
+
+    .service-card,
+    .beneficio-card {
+        text-align: center;
+    }
+
+    .service-card .icon-box,
+    .beneficio-card .icon-box {
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .swot-grid {
@@ -603,10 +700,78 @@ textarea.form-control {
         flex-direction: column;
     }
 
+    .footer {
+        padding-bottom: 86px !important;
+    }
+
+    .footer p {
+        font-size: .92rem;
+        line-height: 1.45;
+    }
+
+    .footer-links {
+        margin-top: 8px;
+        font-size: .95rem;
+    }
+
     .whatsapp-btn {
         right: 14px;
         bottom: 14px;
-        width: 56px;
-        height: 56px;
+        width: 54px;
+        height: 54px;
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar > .container {
+        gap: 8px;
+    }
+
+    .navbar-toggler {
+        padding: 6px 8px;
+    }
+
+    .hero-section {
+        padding-top: 24px;
+        padding-bottom: 42px;
+    }
+
+    .hero-subtitle {
+        margin-top: 16px;
+        margin-bottom: 22px;
+    }
+
+    .hero-visual {
+        min-height: 245px;
+    }
+
+    .hero-blob {
+        inset: 18px 8px 10px;
+    }
+
+    .hero-mascot {
+        width: min(220px, 70vw);
+    }
+
+    .icon-box {
+        width: 52px;
+        height: 52px;
+        border-radius: 18px;
+        font-size: 1.45rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .brand-text {
+        max-width: 128px;
+    }
+
+    .hero-title {
+        font-size: 1.85rem;
+    }
+
+    .hero-visual {
+        min-height: 220px;
     }
 }
