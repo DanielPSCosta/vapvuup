@@ -5,35 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Vap Vuup: inclusão digital, suporte tecnológico e aulas simples para idosos e pessoas que precisam de ajuda com tecnologia.">
-    <title>Vap Vuup</title>
+        content="Inclusão conecta: inclusão digital, suporte tecnológico e aulas simples para idosos e pessoas que precisam de ajuda com tecnologia.">
+    <title>Inclusão conecta</title>
+
+
+    <link rel="icon" href="assets/img/inclusao_conecta_separado.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/inclusao_conecta_separado.png">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Inclusão Conecta">
 
     <link rel="icon" type="image/png" href="assets/img/inclusao_conecta_separado.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+
+
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white bg-opacity-75 border-bottom shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none flex-shrink-0" href="index.html" aria-label="Página inicial Vap Vuup">
-                <img class="brand-logo" src="assets/img/inclusao_conecta_separado.png" alt="Logo Vap Vuup">
-                <span class="brand-text">
-                    Vap Vuup
+        <div class="container fs-3">
+            <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2 text-decoration-none"
+                href="index.html" aria-label="Página inicial Inclusão conecta">
+                <img class="brand-logo" src="assets/img/inclusao_conecta_separado.png" alt="Logo Inclusão conecta">
+                <span class="brand-text fs-3">
+                    Inclusão conecta
                 </span>
             </a>
 
-            <button class="navbar-toggler border-0 shadow-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold" href="index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="pages/planos.html">Doações</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="pages/sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold" href="pages/formulario.html">Contato</a></li>
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 ">
+                    <li class="nav-item"><a class="nav-link active rounded-pill px-3 py-2 fw-semibold"
+                            href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/planos.html">Doações</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/formulario.html">Contato</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link rounded-pill px-3 py-2 fw-semibold"
+                            href="pages/login.html">Login</a></li> -->
+
+
+
+                    <li class="nav-item menu_letra">
+                        <button class="btn btn-outline-secondary btn-sm" id="aumentar">A+</button>
+                        <button class="btn btn-outline-secondary btn-sm" id="diminuir">A-</button>
+                        <button class="btn btn-outline-primary btn-sm" id="resetar">A</button>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -47,7 +76,7 @@
                         <span class="eyebrow">Tecnologia sem complicação</span>
                         <h1 class="hero-title">Facilidade digital para <span>meia idade e idosos</span>.</h1>
                         <p class="hero-subtitle">
-                            A Vap Vuup ajuda pessoas a usarem celular, computador, aplicativos e serviços digitais com
+                            A Inclusão conecta ajuda pessoas a usarem celular, computador, aplicativos e serviços digitais com
                             paciência, linguagem simples e acompanhamento humano.
                         </p>
 
@@ -62,47 +91,12 @@
                         <div class="hero-visual mx-auto" aria-hidden="true">
                             <div class="hero-blob"></div>
                             <img class="hero-mascot" src="assets/img/inclusao_conecta_separado.png"
-                                alt="Mascote Vap Vuup">
-                            <!-- 
-                            <div class="float-card card-one">
-                                <strong>Aprendizado guiado</strong>
-                                <span>Passo a passo, sem pressa e sem termos difíceis.</span>
-                            </div>
-
-                            <div class="float-card card-two">
-                                <strong>Suporte confiável</strong>
-                                <span>Ajuda para WhatsApp, banco, e-mail e aplicativos.</span>
-                            </div> -->
+                                alt="Mascote Inclusão conecta">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- <section class="stats-strip">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="stat-card">
-                            <strong>1:1</strong>
-                            <span>Atendimento individualizado</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stat-card">
-                            <strong>100%</strong>
-                            <span>Foco em linguagem simples</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="stat-card">
-                            <strong>SP</strong>
-                            <span>Atendimento remoto e presencial</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section class="section-padding" id="servicos">
             <div class="container">
@@ -155,7 +149,7 @@
 
         <section class="section-padding">
             <div class="container">
-                <h2 class="section-title">Por que escolher a Vap Vuup?</h2>
+                <h2 class="section-title">Por que escolher a Inclusão conecta?</h2>
                 <p class="section-subtitle">
                     Porque ninguém deveria depender de sorte, neto disponível ou tutorial duvidoso no YouTube para
                     resolver algo básico no celular.
@@ -200,6 +194,8 @@
             </div>
         </div>
 
+
+
         <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
         <script>
@@ -209,50 +205,31 @@
 
 
 
+
+
     </main>
 
     <footer class="footer bg-dark text-white py-4 mt-5">
         <div class="container">
             <div class="row align-items-center g-3">
-                <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-3 text-center text-md-start">
-                    <img class="footer-logo flex-shrink-0" src="assets/img/vap_vuup_final_4.png" alt="Logo Vap Vuup">
-                    <p>© 2026 Vap Vuup - Inclusão digital com humanidade.</p>
+                <div
+                    class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-3 text-center text-md-start">
+                    <img class="footer-logo flex-shrink-0" src="assets/img/inclusao_conecta_separado.png"
+                        alt="Logo Inclusão conecta">
+                    <p>© 2026 Inclusão conecta - Inclusão digital com humanidade.</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="footer-links d-flex flex-wrap justify-content-center justify-content-md-end align-items-center gap-2">
-                    <a class="text-white-50 text-decoration-none" href="pages/formulario.html">Contato</a>
-                    <span class="mx-2 text-white-50">•</span>
-                    <a class="text-white-50 text-decoration-none" href="pages/sobre.html">Sobre</a>
+                    <div
+                        class="footer-links d-flex flex-wrap justify-content-center justify-content-md-end align-items-center gap-2">
+                        <a class="text-white-50 text-decoration-none" href="pages/formulario.html">Contato</a>
+                        <span class="mx-2 text-white-50">•</span>
+                        <a class="text-white-50 text-decoration-none" href="pages/sobre.html">Sobre</a>
                         <span class="text-white-50">•</span>
-                    <a class="text-white-50 text-decoration-none" href="pages/planos.html">Doações</a>
+                        <a class="text-white-50 text-decoration-none" href="pages/planos.html">Doações</a>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -264,6 +241,9 @@
 
     <script src="https://kit.fontawesome.com/775fd40529.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
 
 
 </body>

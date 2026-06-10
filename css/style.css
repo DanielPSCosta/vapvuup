@@ -355,7 +355,7 @@ a {
 
 .page-title,
 .page-description,
-.page-hero-card > * {
+.page-hero-card>* {
     position: relative;
     z-index: 1;
     max-width: 780px;
@@ -441,7 +441,7 @@ a {
     border-radius: 16px;
 }
 
-.input-group > :is(.form-control, .input-group-text) {
+.input-group> :is(.form-control, .input-group-text) {
     border-radius: 16px;
 }
 
@@ -491,6 +491,7 @@ textarea.form-control {
 ========================================================= */
 .footer {
     background: #111827 !important;
+    position: relative;
 }
 
 .footer p {
@@ -607,7 +608,30 @@ textarea.form-control {
     .whatsapp-btn {
         right: 14px;
         bottom: 14px;
-        width: 56px;
-        height: 56px;
+        width: 66px;
+        height: 66px;
     }
+
+    .menu_letra {
+        font-size: 10px;
+    }
+
+
+
+    /* Login */
+    .bg-image-vertical {
+        position: relative;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+        background: #94e7d5;
+    }
+
+    @media (min-width: 1025px) {
+        .h-custom-2 {
+            height: 100%;
+        }
+    }
+
 }
